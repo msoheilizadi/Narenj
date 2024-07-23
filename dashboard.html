@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/f5c38e518c.js" crossorigin="anonymous"></script>
+    <title>Dashboard</title>
+</head>
+
+<body>
+    <div class="containter">
+        <nav>
+            <ul>
+                <li><a href="#" class="logo">
+                    <img src="img/3.jpg" alt="">
+                    <span class="nav-item">DashBoard</span>
+                </a></li>
+                <li><a href="file:///C:/Users/Soheil/Desktop/Projects%20for%20Company/Project%20Control/templates/dashboard.html#" class="active">
+                    <i class="fas fa-home"></i>
+                    <span class="nav-item">Home</span>
+                </a></li>
+                <li><a href="#">
+                    <i class="fas fa-solid fa-user"></i>
+                    <span class="nav-item">Profile</span>
+                </a></li>
+                <li><a href="file:///C:/Users/Soheil/Desktop/Projects%20for%20Company/Project%20Control/templates/project-control.html">
+                    <i class="fas fa-solid fa-chart-simple"></i>
+                    <span class="nav-item">Project Control Forms</span>
+                </a></li>
+                <li><a href="#">
+                    <i class="fas fa-solid fa-code"></i>
+                    <span class="nav-item">Empty</span>
+                </a></li>
+                <li><a href="#">
+                    <i class="fas fa-solid fa-code"></i>
+                    <span class="nav-item">Empty</span>
+                </a></li>
+                <li><a href="#">
+                    <i class="fas fa-solid fa-code"></i>
+                    <span class="nav-item">Empty</span>
+                </a></li>
+                <li><a href="#">
+                    <i class="fas fa-solid fa-code"></i>
+                    <span class="nav-item">Empty</span>
+                </a></li>
+                <li><a href="file:///C:/Users/Soheil/Desktop/Projects%20for%20Company/Project%20Control/templates/login.html" class="logout">
+                    <i class="fas fa-sign-out-alt"></i>
+                    <span class="nav-item">Log out</span>
+                </a></li>
+            </ul>
+        </nav>
+
+        <section class="main">
+
+            <!-- A button to open the popup form -->
+
+            <button class="open-button" onclick="openForm(this)">Create Form</button>
+
+            <!-- The form -->
+            <div class="form-popup" id="myForm">
+            <div id="tab2" class="tabcontent">
+                <form action="/action_page.php" class="form-container">
+                    <div class="tst2">
+                        <div><h1>5-EX-01</h1></div>
+                        <div><h2>فرم صورت وضعیت متره</h2></div>
+                    </div>
+                    
+                    <div>
+                        <div class="rtl">
+                            <label><b>شرح عملیات</b></label>
+                            <input type="text" placeholder="مقدار پیش فرض" name="email" required>        
+                        </div>
+                    </div>
+                    
+                    <div>
+                        <div class="row">
+                            <div class="column">
+                                <div><label><b>طول</b></label></div>
+                                <div><input type="text" placeholder="مقدار پیش فرض" name="email" id="lenght" required></div>
+                            </div>
+                            <div class="column">
+                                <div><label><b>عرض</b></label></div>
+                                <div><input type="text" placeholder="مقدار پیش فرض" name="email" id="width" required></div>
+                            </div>
+                            <div class="column">
+                                <div><label><b>ارتفاع</b></label></div>
+                                <div><input type="text" placeholder="مقدار پیش فرض" name="email" id="height" required></div>
+                            </div>
+                            <div class="column">
+                                <div><label><b>تعداد مشابه</b></label></div>
+                                <div><input type="text" placeholder="مقدار پیش فرض" id="number" name="email" required></div>
+                            </div>
+                            <div class="column">
+                                <div><label><b>واحد</b></label></div>
+                                <div><input type="text" placeholder="مقدار پیش فرض" name="email" required></div>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="row">
+                        <div class="column"></div>
+                        <div class="column">
+                            <div><label><b>مقدار</b></label></div>
+                            <div><input readonly type="text" placeholder="0" name="email" id="box1" required></div>
+                        </div>
+                        <div class="column">
+                            <div><label><b>جمع جزء</b></label></div>
+                            <div><input readonly type="text" placeholder="0" name="email" id="box2" required></div>
+                        </div>
+                        <div class="column">
+                            <div><label><b>جمع کل</b></label></div>
+                            <div><input readonly type="text" placeholder="0" name="email" required></div>
+                        </div>
+                        <div class="column">
+                            <div><label><b>محاسبه</b></label></div>
+                            <div><button type="button" class="btn" onclick="calculation()">calculate</button></div>
+                        </div>
+                    </div>
+    
+                    <div class="rtl form-group">
+                        <label for="remarks">ملاحظات:</label>
+                        <textarea id="remarks" name="remarks" placeholder="اینجا ملاحظات خود را وارد کنید..."></textarea>
+                    </div>
+    
+                    <button type="submit" class="btn">ساخت و ارسال</button>
+                    <button type="button" class="btn cancel" onclick="closeForm()">بستن</button>
+                </form>
+            </div>
+
+
+        </div>
+            <script src="script.js"></script>
+        </section>
+    
+    </div>
+</body>
+</html>
